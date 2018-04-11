@@ -13,6 +13,12 @@
      text-align: center;
  }
 
+ .sachmatulenta .sachmatu {
+     background-color: #336A86;
+     margin-top: 40px;
+     text-align: center;
+ }
+
  .menu li {
      padding: 8px;
      background-color: #D3D3D3;
@@ -146,6 +152,7 @@
      color: #336A86;
      font-size: 18px;
      font-weight: bold;
+     margin: 30px;
  }
 
  .mushroom img {
@@ -163,12 +170,12 @@
      padding-right: 15px;
  }
 
- aside h3 {
+ aside h2 {
      color: #753625;
  }
 
  .sachmatu {
-     text-align: right;
+     text-align: center;
  }
 
  .antraste {
@@ -188,8 +195,9 @@
      text-align: center;
      background-color: #336A86;
      opacity: 0.8;
-     margin-top: 300px;
+     margin-top: 200px;
  }
+
 
  .hobiai li{
      background-color: white;
@@ -238,3 +246,11 @@
      margin: 0;
      text-shadow: 2px 2px 5px white;
  }
+
+ footer {
+     text-align: center;
+     color: #336A86;
+ }
+
+
+
