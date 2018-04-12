@@ -117,22 +117,12 @@
      padding-left: 15px;
  }
 
- .sachmatu, .lenta {
-     margin: 60px;
- }
-
  .turinys img {
      border: 1px solid #753625;
      border-radius: 4px;
      padding: 5px;
      width: 250px;
      text-align: center;
- }
-
- .border, .lenta {
-     border-bottom: 1px solid #753625;
-     border-top: 1px solid #753625;
-     margin: 40px 0 40px 0;
  }
 
  .nav {
@@ -191,13 +181,14 @@
      text-shadow: 2px 2px 4px #000000;
  }
 
- .apiemane {
+ .apiemane, .sachmatulenta, .sachmatu, .animacija {
      text-align: center;
      background-color: #336A86;
      opacity: 0.8;
      margin-top: 200px;
+     height: 650px;
+     border-top: 1px solid #753625;
  }
-
 
  .hobiai li{
      background-color: white;
@@ -209,10 +200,11 @@
      font-size: 20px;
      font-style: italic;
      text-decoration: overline;
+     text-shadow: 2px 2px 5px #753625;
  }
 
  .antrashobis {
-     margin: 8px;
+     margin-top: 10px;
      color: #753625;
      font-size: 18px;
      font-weight: bold;
@@ -220,7 +212,7 @@
  }
 
  .treciashobis {
-     margin: 8px;
+     margin-top: 10px;
      color: darkred;
      font-size: 30px;
      font-weight: bold;
@@ -228,10 +220,11 @@
  }
 
  .ketvirtashobis {
-     padding: 8px;
+     margin-top: 10px;
      color: darkgreen;
      font-size: 30px;
      font-style: italic;
+     text-shadow: 2px 2px 5px #753625;
  }
 
  .atgal a {
