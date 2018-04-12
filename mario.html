@@ -5,6 +5,7 @@
     <title>Mario</title>
     <link rel="stylesheet" href="css/meniu.css">
     <link rel="stylesheet" href="css/sachmatai.css">
+
 </head>
 <body>
 <nav>
@@ -16,6 +17,14 @@
         <li><a href="animacijos.html">Animacijos</a></li>
     </ul>
 </nav>
+<div class="klavisumenu">
+    <div><button onclick="judetiAukstyn()">Judėti į aukštyn</button> </div>
+    <div><button onclick="judetiKaire()">Judėti į kairę</button></div>
+    <div><button onclick="judetiDesine()">Judėti į dešinę</button></div>
+    <div><button onclick="judetiZemyn()">Judėti į žemyn</button></div>
+</div>
+
+
 <div class="sachmatu">
     <div class="antraste"> <p>Mano žaidimas "Mario ieško grybo". Surask tinkamą kelią ir parnešk grybą į vietą.</p> <br></div>
     <div class="eilute1">
@@ -29,7 +38,7 @@
         <div class="stulpelis1 black"></div>
         <div class="stulpelis1 white"></div>
         <div class="stulpelis1 white mario">
-            <img src="img/MarioSMRS.png">
+            <img src="img/MarioSMRS.png" id="R2D2">
         </div>
     </div>
     <div class="eilute1">
@@ -78,5 +87,6 @@
 <div class="atgal">
     <a href="index.html">Grįžti į pagrindinį</a>
 </div>
+<script src="js/valdymas.js"></script>
 </body>
 </html>
