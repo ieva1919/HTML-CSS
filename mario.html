@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/meniu.css">
     <link rel="stylesheet" href="css/sachmatai.css">
 
+
 </head>
 <body>
 <nav>
@@ -18,17 +19,17 @@
     </ul>
 </nav>
 <div class="klavisumenu">
-    <div><button onclick="judetiAukstyn()">Judėti į aukštyn</button> </div>
-    <div><button onclick="judetiKaire()">Judėti į kairę</button></div>
-    <div><button onclick="judetiDesine()">Judėti į dešinę</button></div>
-    <div><button onclick="judetiZemyn()">Judėti į žemyn</button></div>
+    <div><button id="judetiAukstyn"> Judėti į aukštyn</button></div>
+    <div><button id="judetiKaire"> Judėti į kairę</button></div>
+    <div><button id="judetiDesine"> Judėti į dešinę</button></div>
+    <div><button id="judetiZemyn">Judėti į žemyn</button></div>
 </div>
 
 
 <div class="sachmatu">
     <div class="antraste"> <p>Mano žaidimas "Mario ieško grybo". Surask tinkamą kelią ir parnešk grybą į vietą.</p> <br></div>
     <div class="eilute1">
-        <div class="stulpelis1 white mushroom">
+        <div class="stulpelis1 white mushroom" id="mushroom">
             <img src="img/mushroom.png">
         </div>
         <div class="stulpelis1 white"></div>
@@ -38,7 +39,7 @@
         <div class="stulpelis1 black"></div>
         <div class="stulpelis1 white"></div>
         <div class="stulpelis1 white mario">
-            <img src="img/MarioSMRS.png" id="R2D2">
+            <img src="img/MarioSMRS.png" id="mario">
         </div>
     </div>
     <div class="eilute1">
@@ -87,6 +88,7 @@
 <div class="atgal">
     <a href="index.html">Grįžti į pagrindinį</a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/valdymas.js"></script>
 </body>
 </html>
