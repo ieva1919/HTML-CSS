@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html ng-app="">
 <head>
     <meta charset="UTF-8">
     <title>Ieva Sinkevičiūtė</title>
@@ -11,21 +12,22 @@
 </head>
 <body>
 <div class="border">
-    <nav>
+    <nav ng-init="meniu=[{url:'index.html', title: 'Pradzia'},
+    {url:'Apiemane.html', title: 'Apie mane'},
+    {url:'Sachmatulenta.html', title: 'Sachmatu lenta'},
+    {url:'mario.html', title: 'Mario'},
+    {url:'animacijos.html', title: 'Animacijos'}]">
         <ul class="menu">
-            <li><a href="index.html">Pagrindinis</a> </li>
-            <li><a href="Apiemane.html">Apie mane</a> </li>
-            <li><a href="Sachmatulenta.html">Šachmatų lenta</a> </li>
-            <li><a href="mario.html">Mario</a> </li>
-            <li><a href="animacijos.html">Animacijos</a></li>
-        </ul>
+            <li ng-repeat="item in meniu">
+                <a href="{{item.url}}">{{item.title}}</a>
+            </li>
     </nav>
     <aside>
-        <ul class="antrasmeniu"> <h2> Kalbos, kurias mokausi:</h2> <br>
+        <ul class="antrasmeniu"> <h2> Programavimo kalbos, kurias mokausi:</h2> <br>
             <li><a href="#">HTML</a> </li>
-            <li><a href="#">CSS</a> </li>
-            <li><a href="#">JavaScript</a> </li>
-            <li><a href="#">jQuery</a></li>
+            <li><a href="#">CSS ir Bootstrap</a> </li>
+            <li><a href="#">JavaScript ir jQuery, Angular</a> </li>
+            <li><a href="#">PHP</a></li>
         </ul>
     </aside>
 </div>
@@ -44,11 +46,32 @@
         accident, sometimes on purpose (injected humour and the like).
 
     </p>
+    <div class="forma">
+        <form>
+            <h2> Pirmame laukelyje įveskite savo vardą, antrame pavardę: {{firstname}} {{lastname}}</h2> <br>
+
+            First name:<br>
+            <input type="text" name="firstname" ng-model="firstname" ng-init="">
+            <br>
+            <select> <p> Gimtasis miestas: </p>
+            <option value="volvo">Kaunas</option>
+                <option value="saab">Vilnius</option>
+                <option value="mercedes">Klaipėda</option>
+                <option value="audi">Druskininkai</option>
+                <option value="audi">Kita</option>
+            </select>
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" ng-model="lastname">
+
+        </form>
+    </div>
 </div>
 
-
+<br>
 <footer> Visos teises saugomos &copy; 2018 </footer>
 
 <script src="js/testas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </body>
 </html>
