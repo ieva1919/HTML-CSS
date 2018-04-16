@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<html ng-app="">
+<html ng-app="manoApsas">
 <head>
     <meta charset="UTF-8">
     <title>Ieva Sinkevičiūtė</title>
@@ -12,15 +11,13 @@
 </head>
 <body>
 <div class="border">
-    <nav ng-init="meniu=[{url:'index.html', title: 'Pradzia'},
-    {url:'Apiemane.html', title: 'Apie mane'},
-    {url:'Sachmatulenta.html', title: 'Sachmatu lenta'},
-    {url:'mario.html', title: 'Mario'},
-    {url:'animacijos.html', title: 'Animacijos'}]">
+
+    <nav ng-controller ="menuController as mc">
         <ul class="menu">
-            <li ng-repeat="item in meniu">
+            <li ng-repeat="item in mc.meniu">
                 <a href="{{item.url}}">{{item.title}}</a>
             </li>
+        </ul>
     </nav>
     <aside>
         <ul class="antrasmeniu"> <h2> Programavimo kalbos, kurias mokausi:</h2> <br>
@@ -31,6 +28,22 @@
         </ul>
     </aside>
 </div>
+
+<nav ng-controller ="menuController as mc">
+    <ul>
+        <li ng-repeat="item in mc.meniu2">
+            <a href="#">{{item.name}}</a>
+            <ul ng-if="item.submenu.length">
+                <li ng-repeat="item2 in item.submenu">
+                    <a href="#">{{item2.name}}</a>
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</nav>
+
+
 <div class="turinys">
     <p>Ieva Sinkeviciute</p>
         <img src="img/Ieva2.jpg" alt="Asmenine foto"/>
@@ -73,5 +86,6 @@
 
 <script src="js/testas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/angular failai/manoApsas.js"></script>
 </body>
 </html>
