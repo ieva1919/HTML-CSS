@@ -275,4 +275,32 @@
      display: none !important;
  }
 
+ .border {
+     text-align: center;
+ }
 
+ .treciasmeniu a {
+     color: #753625;
+     text-decoration: none;
+     border: 2px solid #336A86;
+     margin: 15px;
+ }
+
+ .treciasmeniu a:hover {
+     color: darkgreen;
+ }
+
+ .treciasmeniu {
+     text-align: center;
+     border: 2px solid #336A86;
+ }
+
+ .treciasmeniu li {
+     line-height: 2em;
+     padding: 10px;
+ }
+
+.treciasmeniu p {
+    font-size: 22px;
+    margin: 20px;
+}

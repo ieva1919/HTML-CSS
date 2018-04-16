@@ -28,21 +28,22 @@
         </ul>
     </aside>
 </div>
+<div class="treciasmeniu">
+    <p>Mano pomėgiai, praskaidrinantys ir įprasminantys kasdienybę: </p>
+    <nav ng-controller ="menuController as mc">
+        <ul>
+            <li ng-repeat="item in mc.meniu2">
+                <a href="#">{{item.name}}</a>
+                <ul ng-if="item.submenu">
+                    <li ng-repeat="item2 in item.submenu">
+                        <a href="#">{{item2.name}}</a>
+                    </li>
+                </ul>
 
-<nav ng-controller ="menuController as mc">
-    <ul>
-        <li ng-repeat="item in mc.meniu2">
-            <a href="#">{{item.name}}</a>
-            <ul ng-if="item.submenu.length">
-                <li ng-repeat="item2 in item.submenu">
-                    <a href="#">{{item2.name}}</a>
-                </li>
-            </ul>
-
-        </li>
-    </ul>
-</nav>
-
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <div class="turinys">
     <p>Ieva Sinkeviciute</p>

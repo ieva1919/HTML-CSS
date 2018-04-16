@@ -13,17 +13,17 @@ app.controller('menuController', function($scope) {
         ];
 
     vm.meniu2 = [
-        {name: 'Labas' },
-        {name: 'Pasisveikinimas' },
+        {name: 'Knygų skaitymas' },
+        {name: 'Gelinis nagų lakavimas' },
         {
-            name: 'Testas',
+            name: 'Sportas',
             submenu: [
-                { name: 'sub1' },
-                { name: 'sub2' },
+                { name: 'Bėgimas' },
+                { name: 'Vaiksčiojimas' },
             ]
         },
-        {name: 'ABC' },
-        {name: 'ODE' }];
+        {name: 'Mėgavimasis kieviena diena' },
+        {name: 'Susitikimai su draugais' }];
 
 
 });
